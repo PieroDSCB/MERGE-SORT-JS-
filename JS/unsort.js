@@ -1,5 +1,6 @@
 const containerUnsorted = document.getElementById("container");
 const unsortButton = document.getElementById("unsort");
+const listSorted = document.getElementsByClassName("main__box");
 unsortButton.addEventListener("click", () => {
     if (isSorting) {
         alert("Wait for it to be organized first before unsorting it")
@@ -16,6 +17,6 @@ function unsort(node) {
         var random = Math.floor(Math.random() * 10) + 1;
 
         node.children[i].innerText = random;
-
+        listSorted[i].style.backgroundColor = "red";
     }
 }

@@ -41,6 +41,7 @@ function putList(container) {
     for (var i = 0; i < boxes.length; i++) {
 
         boxes[i].classList.add("main__box");
+
         container.appendChild(boxes[i]);
 
     }
