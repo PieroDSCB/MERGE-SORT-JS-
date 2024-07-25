@@ -1,0 +1,149 @@
+.popUp {
+    position: absolute;
+    width: 500px;
+    height: 60%;
+    padding: 20px;
+    background-color: rgb(249, 250, 255);
+    top: -30%;
+    left: 20%;
+    opacity: 0;
+    border-radius: 50px;
+    transform: scale(0.1);
+    display: grid;
+    grid-template-rows: 20% 30% 20% 30%;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.show {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    opacity: 1;
+}
+
+.popUp__header {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.popUp__button {
+    width: 20%;
+    height: 35%;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.popUp__button--add {
+    line-height: 40px;
+    align-self: center;
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.popUp__button--subtract {
+    padding-bottom: 40px;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.popUp__buttons {
+    width: 100%;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-row: 4/5;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.popUp__paragraph {
+
+    justify-self: center;
+    grid-column: 1/2;
+    font-size: 1.2rem;
+    align-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.popUp__icons {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+}
+
+.popUp__buttonOK {
+
+    width: 40%;
+    height: 90%;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+
+}
+
+.popUp__buttonX {
+    width: 30%;
+    height: 90%;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.popUp__container {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+}
+
+.popUp__list {
+    width: 100%;
+    height: 32%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-row: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.popUp__list__box {
+    background-color: rgb(230, 13, 13);
+    border: 2px solid black;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+}
+
+.popUp__input {
+    width: 10%;
+    height: 10%;
+    padding: 20px;
+    grid-row: 3/4;
+    grid-column: 1/3;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 1px 1px 5px 2px;
+    justify-self: center;
+    align-self: center;
+}
+
+.popUp__input::-webkit-inner-spin-button {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+}

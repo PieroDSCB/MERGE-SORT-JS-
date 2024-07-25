@@ -1,0 +1,36 @@
+.main__container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    position: relative;
+    justify-self: center;
+    top: 0;
+}
+
+.main__box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: 2px solid black;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transition-timing-function: linear;
+    top: 0;
+}
+
+.main__containerLeft {
+    display: grid;
+    position: absolute;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    top: 0;
+}
+
+.main__containerRight {
+    display: grid;
+    position: absolute;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    top: 0;
+}

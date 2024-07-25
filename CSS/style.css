@@ -1,0 +1,33 @@
+@import url(./pop.css);
+@import url(./list.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 80vh;
+    width: 100vw;
+    display: grid;
+    top: 0;
+    transition-duration: 1s;
+}
+
+.footer {
+    height: 20vh;
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    place-items: center;
+    transition-duration: 1s;
+}
+
+button {
+    width: 50%;
+    height: 40%;
+}

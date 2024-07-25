@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="JS/main.js" defer></script>
+    <script src="JS/pop.js" defer></script>
+    <script src="JS/unsort.js" defer></script>
+
+</head>
+
+<body>
+    <main class="main" id="main">
+        <div class="main__container" id="container">
+            <div class="main__box">3</div>
+            <div class="main__box">7</div>
+            <div class="main__box">4</div>
+            <div class="main__box">10</div>
+            <div class="main__box">5</div>
+            <div class="main__box">8</div>
+            <div class="main__box">1</div>
+            <div class="main__box">2</div>
+            <div class="main__box">6</div>
+            <div class="main__box">9</div>
+        </div>
+    </main>
+    <section class="popUp" id="popUp">
+        <div class="popUp__header">
+            <p class="popUp__paragraph">Maximo 10 numeros :)</p>
+            <div class="popUp__icons">
+                <button class="popUp__buttonOK" id="buttonOK">OK</button>
+                <button class="popUp__buttonX" id="butonX">X</button>
+            </div>
+        </div>
+
+        <div class="popUp__container">
+            <div class="popUp__list" id="list"></div>
+        </div>
+        <input id="inputNumber" class="popUp__input" type="number">
+        <div class="popUp__buttons">
+            <button class="popUp__button popUp__button--add" id="add">+</button>
+            <button class="popUp__button popUp__button--subtract" id="substract">-</button>
+        </div>
+    </section>
+
+
+
+    <footer class="footer" id="footer">
+        <button id="sort">SORT</button>
+        <button id="create">CREATE</button>
+        <button id="unsort">UNSORT</button>
+    </footer>
+</body>
+
+</html>
